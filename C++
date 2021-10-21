@@ -1,0 +1,57 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+//вариант 7  (7,11,24в)
+void ExerciseSeven()// 7 задание
+{
+    int a,b,c,P,S;
+    cout << "1katet: ";
+    cin >> a;
+    cout << "2katet: ";
+    cin >> b;
+    c = sqrt(a * a + b * b);
+    P = a + b + c;
+    S = a * b / 2;
+    cout << "Perimetr: " << P;
+    cout << "\nSquare: " << S;
+}
+
+void ExerciseEleven() //11 задание
+{
+    int a1,a2,a3,variable1,variable2;
+    cout << "\n1: ";
+    cin >> a1;
+    cout << "2: ";
+    cin >> a2;
+    cout << "3: ";
+    cin >> a3;
+    //большее из них
+    if (a1 - a2 > 0) { variable1 = a1; }else { variable1 = a2; }
+    if (variable1 - a3 < 0) { variable1 = a3; }
+    //меньшее
+    if (a1 - a2 < 0) { variable2 = a1; }else { variable2 = a2; }
+    if (variable2 - a3 > 0) { variable2 = a3; }
+    cout << variable1 + variable2;
+}
+
+void TwentyFour_B() 
+{
+    int a = -10;
+    int b;
+    cout << "\nEnter the number...";
+    cin >> b;
+    for (int i = 1; i <=b; i++)
+    {
+        a += i;
+    }
+    cout << "\n" << a;
+}
+
+int main()
+{
+    ExerciseSeven();
+    ExerciseEleven();
+    TwentyFour_B();
+    return 0;
+}
